@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulário de Pesquisa</title>
+    <meta charset='UTF-8'>
+</head>
+
+<body>
+    <h1 id='title'>
+        Formulário de Pesquisa
+    </h1>
+    <p id='description'>
+        Desafio para certificação FreeCodeCamp
+    </p>
+    <form id='survey-form'>
+        <fieldset>
+            <label id="name-label">
+                Nome: <input id='name' type='text' placeholder='Digite seu nome' required>
+            </label>
+            <label id="email-label">
+                E-mail: <input id='email' type='email' placeholder='Digite seu e-mail' required>
+            </label>
+            <label id="number-label">
+                Idade: <input id='number' type='number' min='12' max='120' placeholder='Digite sua idade'>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label>Qual seu Pokémon inicial favorito?
+                <select id='dropdown'>
+                    <option value="">Selecione o pokémon</option>
+                    <option value="1">Charmander</option>
+                    <option value="2">Bulbasaur</option>
+                    <option value="3">Squirtle</option>
+                </select>
+            </label>
+            <label>
+                <input type='radio' name='regiao' value='kanto'> Kanto
+                <input type='radio' name='regiao' value='johto'> Johto
+                <input type='radio' name='regiao' value='hoenn'> Hoenn
+            </label>
+        </fieldset>
+        <fieldset>
+            <label>Quais os seus elementos preferidos?
+                <input type='checkbox' value='fogo'> Fogo
+                <input type='checkbox' value='fogo'> Água
+                <input type='checkbox' value='fogo'> Planta
+            </label>
+        </fieldset>
+        <fieldset>
+            <label>Deixe sugestões
+                <textarea></textarea>
+            </label>
+        </fieldset>
+        <button id='submit' type='submit'>
+            Enviar
+        </button>
+    </form>
+</body>
+
+</html>
